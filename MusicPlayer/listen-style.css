@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+/* body{
+    height: 800px;
+} */
+
+.img1{
+    height: 20px;
+}
+
+.logo{
+    display: flex;
+    padding-left: 60px;
+    width: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content{
+    position: fixed;
+    z-index: 99;
+    padding: 12px 0px;
+    padding-right: 50px;
+    width: 100%;
+    margin: auto;
+    opacity: 0.92;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-content .nav{
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-content .nav li::after{
+    content: '';
+    display: block;
+    background-color: rgba(6, 8, 59,0.9);
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}
+
+.header-content .nav #listen::after{
+    transform: scaleX(1);
+}
+
+.header-content .nav li:hover::after{
+    transform: scaleX(1);
+}
+
+
+a{
+    text-decoration: none;
+    font-weight: 50px;
+    color: rgba(19, 21, 56, 0.9);
+    text-transform: capitalize;
+}
+
+.songs h2{
+    color: white;
+    width: 300px;
+    font-size: 40px;
+    position: relative;
+    top: 130px;
+    left:50%;
+    z-index: 2;
+    transform: translate(-50%);
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px;
+    padding: 5px 10px;
+    border: 2px solid rgba(19, 21, 56, 0.9);
+    letter-spacing: 3px;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.song-heading{
+    color: white;
+    width: 600px;
+    font-size: 40px;
+    z-index: 2;
+    position: relative;
+    top: 230px;
+    text-transform: capitalize;
+    /* text-shadow: 1px 1px 2px; */
+    padding: 5px 10px;
+    border: 2px solid rgba(19, 21, 56, 0.9);
+    letter-spacing: 3px;
+    text-align: center;
+    /* border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%; */
+
+}
+
+.songs{
+    height: 480vh;
+}
+
+.songs .song{
+    display: flex;
+    z-index: 2;
+    height: 100px;
+    width: 700px;
+    position: relative;
+    top: 300px;
+    margin-left: 100px;
+    background: linear-gradient(to bottom,rgba(201, 187, 207,0.92),rgba(6, 59, 43, 0.9)),url('images/about-1.jpg');
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 3px 2px 10px rgba(6, 59, 43, 0.9);
+}
+
+.songs .song img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+.bg{
+    height: 100vh;
+    z-index: 1;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(134, 118, 141, 0.92),rgba(47, 6, 59, 0.8)),url('images/category-1.jpg');
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+}
+
+.songs .song .music{
+    width: 75%;
+}
+
+.songs .song .music audio{
+    width: 100%;
+    padding: 30px 0px;
+    padding-right: 16px;
+    outline: none;
+    color: transparent;
+    background-color:  white;
+}
+
+/* song2 */
+.songs #song2{
+    position: relative;
+    top: 500px;
+    background: linear-gradient(to bottom,rgba(201, 187, 207,0.92),rgba(59, 6, 6, 0.9));
+    box-shadow: 3px 2px 10px rgba(59, 6, 6, 0.9);
+}
+
+.songs #song2-heading{
+    position: relative;
+    width: 800px;
+    top: 430px;
+}
+
+/* song3 */
+.songs #song3{
+    position: relative;
+    top: 700px;
+    background: linear-gradient(to bottom,rgba(201, 187, 207,0.92),rgba(19, 18, 18, 0.9));
+    box-shadow: 3px 2px 10px rgba(15, 15, 15, 0.9);
+}
+
+.songs #song3-heading{
+    position: relative;
+    width: 670px;
+    top: 630px;
+}
+
+/* song4 */
+.songs #song4{
+    position: relative;
+    top: 900px;
+    background: linear-gradient(to bottom,rgba(201, 187, 207,0.92),rgba(141, 83, 7, 0.9));
+    box-shadow: 3px 2px 10px rgba(141, 83, 7, 0.9);
+}
+
+.songs #song4-heading{
+    position: relative;
+    width: 790px;
+    top: 830px;
+}
+
+/* song5 */
+.songs #song5{
+    position: relative;
+    top: 1100px;
+    background: linear-gradient(to bottom,rgba(201, 187, 207,0.92),rgba(12, 75, 148, 0.9));
+    box-shadow: 3px 2px 10px rgba(12, 75, 148, 0.9);
+}
+
+.songs #song5-heading{
+    position: relative;
+    width: 740px;
+    top: 1030px;
+}
+
+/* song6 */
+.songs #song6{
+    position: relative;
+    top: 1300px;
+    background: linear-gradient(to bottom,rgba(201, 187, 207,0.92),rgba(171, 178, 187, 0.9));
+    box-shadow: 3px 2px 10px rgba(178, 185, 192, 0.9);
+}
+
+.songs #song6-heading{
+    position: relative;
+    width: 780px;
+    top: 1230px;
+}
+
+/* song7 */
+.songs #song7{
+    position: relative;
+    top: 1500px;
+    background: linear-gradient(to bottom,rgba(201, 187, 207,0.92),rgba(107, 77, 50, 0.9));
+    box-shadow: 3px 2px 10px rgba(107, 77, 50, 0.9);
+}
+
+.songs #song7-heading{
+    position: relative;
+    width: 580px;
+    top: 1430px;
+}
+
+.songs h4{
+    font-weight: lighter;
+    font-size: 10px;
+    color: white;
+    z-index: 99;
+    position: absolute;
+    top: 3100px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    /* padding: 10px 0px; */
+}
