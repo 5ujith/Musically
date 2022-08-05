@@ -1,5 +1,5 @@
 # Musically
-- *This is a music website built using *HTML* and *CSS*.*
+- *This is a music website built using **HTML** and **CSS**.*
 - *Added some songs so that you can enjoy listening to them at **free of cost.***
 - *You are most welcome to give me your feedbacks.*
 You can ping me @ <0isujith0@gmail.com>
